@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sandeep Pacharane</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function validateAndSend() {
+				var name = document.getElementById('name').value;
+				var mobile = document.getElementById('mobile').value;
+				var email = document.getElementById('email').value;
+				var message = document.getElementById('message').value;
+	
+				// Simple validation
+				if (name == "" || mobile == "" || email == "" || message == "") {
+					alert("All fields are required!");
+					return false;
+				}
+				if (!/^\d{10}$/.test(mobile)) {
+					alert("Enter a valid 10-digit mobile number");
+					return false;
+				}
+				if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+					alert("Enter a valid email address");
+					return false;
+				}
+	
+				var formattedMessage = encodeURIComponent("Name: " + name + "\nMobile: " + mobile + "\nEmail: " + email + "\nMessage: " + message);
+				var whatsappNumber = "919764445488"; // Use the international format without '+' or '0'
+	
+				var whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + formattedMessage;
+				window.open(whatsappURL, '_blank');
+				
+				document.getElementById("name").value = "";
+  				document.getElementById("mobile").value = "";
+				document.getElementById("email").value = "";
+				document.getElementById("message").value = "";
+				
+				window.scrollTo(0, 0);
+				event.preventDefault();
+				
+				return true;
+				
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major">SANDEEP PACHARANE</h1>
+									<p style="letter-spacing: 0.1em; margin-bottom: 70px;">UIUX Consultant | Product Designer</p>
+									<ul class="actions">
+										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+									</ul>
+								</div>
+								<div class="image filtered span-1-75" data-position="25% 25%">
+									<img src="images/pic01.jpg" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight large right" id="first">
+								<div class="content span-8-9">
+									<!-- <h2 class="major">ABOUT ME</h2>  -->
+									
+									<p style="margin: 10%;"> A seasoned UIUX Consultant | Product Designer with over 12 years of experience in UI/UX and product design. Throughout my career, I have honed my skills in creating user-centred digital experiences and products that not only look great but also deliver optimal usability and functionality. My expertise includes visual design disciplines, UX principles, industry trends, Identify UI design solutions designing user interfaces for web and mobile applications, wire-framing, prototyping, user testing, information designs, user workflows, wireframes, prototypes and conducting research to inform design decisions, I have a keen eye for detail and a passion for creating intuitive and engaging digital products.
+									</p>
+								</div>
+								<!-- <i class="icon fa-solid fa-quote-right"></i> -->
+								<div class="image filtered tinted" data-position="top left">
+									<img src="images/pic02.jpg" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color1">
+								<div class="intro joined">
+									<h2 class="major">DOWNLOAD</h2><br/>
+									<h4><a style="border: none;" href="images/sandeep_pacharane_cv.pdf" target="_blank">CURRICULUM VITAE</a> </h4>
+									<h4><a style="border: none;" href="images/sandeep_pacharane_cl.pdf" target="_blank">MOTIVATION LETTER</a> </h4>
+									<br/><br/>
+								</div>
+								<div class="inner span-3">
+									<ul class="grid-icons three connected">
+										<li><span class="icon solid fa-solid fa-eye"><span class="label">Attention to Detail</span></span></li>
+										<li><span class="icon solid fa-solid fa-splotch"><span class="label">Appreciation</span></span></li>
+										<li><span class="icon solid fa-solid fa-thumbs-up"><span class="label">Teamwork & Collabration</span></span></li>
+										<li><span class="icon solid fa-solid fa-heart"><span class="label">Creativity & Love for Design</span></span></li>
+										<li><span class="icon solid fa-solid fa-chart-bar"><span class="label">Continuous Learning</span></span></li>
+										<li><span class="icon solid fa-solid fa-code"><span class="label">Adaptability & Problem Solving</span></span></li>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight large left">
+								<div class="content span-5">
+									<h2 class="major">MY SKILLSET</h2>
+									<p>I bridge the gap between users and technology. I translate their needs into user-friendly experiences through research and prototyping. But function isn't enough! <br/>I design beautiful interfaces that are both intuitive and visually appealing. I collaborate seamlessly to bring these concepts to life, making products users love to use.</p>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/pic03.jpg" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel">
+								<div class="intro color2">
+									<h2 class="major">DESIGN TOOLS</h2>
+									<p>Sketch, Adobe XD, Figma, InVision, Adobe Photoshop, Pencil, Axure RP, Balsamiq, Adobe Creative Suite, VS Code., Various Figma plugins.</p> 
+								</div>
+								<div class="intro color1">
+									<h2 class="major">USER RESEARCH</h2>
+									<p>    
+										Wireframing, Prototyping, Personas, User 
+										Journey Mapping, A/B Testing, Usability Testing, Data Collection &      
+										Interpretation, UX Research.
+								</p> 
+								</div>
+								<div class="intro color4">
+									<h2 class="major">TECHNIQUES</h2>
+									<p>    
+										Design Thinking, Agile (Scrum), Lean UX, Accessibility (WCAG), Responsive Design, Interaction Design, Visual Consistency  and Visual Hierarchy.
+								</p> 
+								</div>
+								<div class="intro color3">
+									<h2 class="major">FRONTEND DEVELOPMENT</h2>
+									<p>    
+										HTML5, CSS3, JavaScript, Bootstrap, Foundation, jQuery, Grid System and Various JavaScript Frameworks.
+								</p> 
+								</div>
+								<div class="intro color5">
+									<h2 class="major">SOFT SKILLS</h2>
+									<p>    
+										Communication & Teamwork, Collaboration, 
+        								Creativity, Adaptability, Attention to detail, 
+        								Problem-solving, Time Usage, 
+        								Continuous learning.
+									</p> 
+								</div>
+								<!-- Panel -->
+							<section class="panel color1">
+								<div class="intro joined">
+									<h2 class="major">MY PROJECTS</h2>
+									<p>&nbsp;</p>
+								</div>
+								<div class="inner span-3">
+									<ul class="grid-icons three connected">
+										<li><span class="icon solid fa-solid fa-palette"><span class="label">color palette</span></span></li>
+										<li><span class="icon solid fa-solid fa-marker"><span class="label">wireframing</span></span></li>
+										<li><span class="icon solid fa-solid fa-chess-knight"><span class="label">individual contributor</span></span></li>
+										<li><span class="icon solid fa-solid fa-address-card"><span class="label">user centric</span></span></li>
+										<li><span class="icon solid fa-solid fa-globe"><span class="label">global</span></span></li>
+										<li><span class="icon solid fa-solid fa-briefcase"><span class="label">open</span></span></li>
+									</ul>
+								</div>
+							</section>
+								<div class="gallery">
+									<div class="group span-3">
+										<a href="https://www.behance.net/gallery/179457553/Graphics-WAL" target="_blank" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt=""/></a>
+										<a href="https://www.behance.net/gallery/110135393/ratecitycomau" target="_blank" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
+										<a href="https://www.behance.net/gallery/135755395/chronicle" target="_blank" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
+									</div>
+									<a href="https://www.behance.net/gallery/18459555/Ministry-of-Interior-Qatar" target="_blank" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
+									<div class="group span-4-5">
+										<a href="https://www.behance.net/gallery/37910771/Mercer-PeoplePro" target="_blank" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
+										<a href="https://www.behance.net/gallery/120093437/BANK" target="_blank" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
+										<a href="https://www.behance.net/gallery/21963269/Rightt-Genesis" target="_blank" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
+										<a href="https://www.behance.net/gallery/19209919/Bharti-Airtel" target="_blank" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
+									</div>
+									<div class="group span-3">
+										<a href="https://www.behance.net/gallery/62952577/GDPR-marketing" target="_blank" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/010.jpg" alt=""/></a>
+										<a href="https://www.behance.net/gallery/20002895/MavenConsultancyin" target="_blank" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/011.jpg" alt="" /></a>
+										<a href="https://www.behance.net/gallery/128801059/Branding" target="_blank" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/012.jpg" alt="" /></a>
+									</div>
+									<a href="https://www.behance.net/gallery/28413213/Mobistar" target="_blank" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
+								</div>
+							</section>
+
+
+						<!-- Panel -->
+							<section class="panel color4-alt">
+								<div class="intro color4">
+									<h2 class="major">CONTACT ME</h2>
+									<ul class="alt">
+										<li>+91 9764 445488</li>
+										<li><a style="border: none;" href="mailto:sandeep.pacharane@gmail.com" target="_blank"> sandeep.pacharane@gmail.com</a></li>
+										<li><a style="border: none;" href="https://www.google.com/maps/@18.5751386,73.8188778,19z/data=!4m4!7m3!1m1!1s100516749357825121276!2e2?entry=ttu" target="_blank"> My Home Address</a></li>
+										<li>Please fill out the following details to contact me on WhatsApp:</li>
+										<li>&nbsp;</li>
+									</ul>
+									
+								</div>
+								<div class="inner columns divided">
+									<div class="span-3-25">
+										<form onsubmit="return validateAndSend()">
+											<div class="fields">
+												<div class="field half">
+													<label for="name">Name</label>
+													<input type="text" id="name" name="name" required />
+												</div>
+												<div class="field half">
+													<label for="mobile">WhatsApp Number</label>
+													<input style="height: 2.5rem" type="text" name="mobile" id="mobile" />
+												</div>
+												<div class="field">
+													<label for="email">Email</label>
+													<input type="text" name="email" id="email" />
+												</div>
+												<div class="field">
+													<label for="message">Message</label>
+													<textarea name="message" id="message" rows="4"></textarea>
+												</div>
+											</div>
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="button primary" /></li>
+											</ul>
+										</form> 
+										<!-- <form onsubmit="return validateAndSend()">
+											<label for="name">Name:</label><br>
+											<input type="text" id="name" name="name"><br><br>
+											
+											<label for="mobile">Mobile:</label><br>
+											<input type="text" id="mobile" name="mobile"><br><br>
+											
+											<label for="email">Email:</label><br>
+											<input type="text" id="email" name="email"><br><br>
+											
+											<label for="message">Message:</label><br>
+											<textarea id="message" name="message"></textarea><br><br>
+											
+											<input type="submit" value="Submit">
+										</form> -->
+										
+									</div>
+									<div class="span-1-5">
+										<ul class="contact-icons color1">
+											<li class="icon brands fa-behance"><a href="https://www.behance.net/Sandeep_Pacharane" target="_blank">Behance</a></li>
+											<li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/in/sandeep-pacharane/" target="_blank">Linkedin</a></li>
+											<li class="icon brands fa-dribbble"><a href="https://dribbble.com/sandeep_pacharane" target="_blank">Dribbble</a></li>
+											<li class="icon brands fa-instagram"><a href="https://www.instagram.com/i_am_sandeepion/" target="_blank">Instagram</a></li>
+											<li class="icon brands fa-figma"><a href="https://www.figma.com/files/team/1042784940409793922/user/1042784934385441598?fuid=1042784934385441598" target="_blank">Figma</a></li>
+											<li class="icon brands fa-medium-m"><a href="https://medium.com/@sandeep.pacharane" target="_blank">Medium</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color2-alt">
+								<div class="intro color2">
+									<h2 class="major">THANK YOU</h2>
+									<p>Thank you for taking the time to visit my UIUX design portfolio. As a UIUX designer, my goal is to design intuitive, delightful products that meet the needs of end-users. I hope you found my portfolio informative and engaging.</p>
+								</div>	
+							</section>
+
+						<!-- Copyright -->
+							<div class="copyright">&copy;2024 | Sandeep Arvind Pacharane</div>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
